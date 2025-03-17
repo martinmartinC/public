@@ -1,0 +1,188 @@
+{
+    "version": "6.2.6",
+    "social_news": "n",
+    "custom_news": "y",
+    "forceUpdate": "y",
+    "showWeatherCoach": "n",
+    "skipForceUpdateBelowThisOsVersion": "7.0",
+    "googleApiKeyword": "neighborhood",
+    "sadMode":{
+        "switch" : "n",
+        "start" : "2023-11-02 00:00:00",
+        "end" : "2023-11-16 00:00:00"
+    },
+    "splash_ads":{
+        "startupTimeoutSecond_MobileNetwork" : "3",
+        "startupTimeoutSecond_Wifi" : "3",
+        "startupMaxEffectiveVersion" : "6.4.0",
+        "maxCountInSession" : "3",
+        "sessionLifeTimeSecs" : "300",
+        "timeIntervalSecs" : "30"
+    },
+    "liveChannel":{
+        "emptyChannelMessage":"稍後再試",
+        "liveWeb" : "off",
+        "liveWebUrl" : "",
+        "channels":[
+            {"id":"331", "switch":"y", "default":"n"},
+            {"id":"332", "switch":"y", "default":"y"},
+            {"id":"332a", "switch":"y", "default":"n"}
+        ],
+        "avPlayerMode" : "y"
+    },
+    "newsListSections": [
+             {"name":"熱門", "class":"HotNewsList", "width":74, "minVersion":"6.0.0", "maxVersion":"6.3.9", "pageId":26},
+             {"name":"要聞", "class":"ImportantNewsListView", "width":74, "minVersion":"5.0.0", "maxVersion":"9.9.9", "pageId":21, "default":"y"},
+             {"name":"港聞", "class":"HKNewsListView", "width":74, "minVersion":"5.0.0", "maxVersion":"9.9.9", "pageId":4},
+             {
+                "name":"關稅戰",
+                "class":"CustomEventWebview",
+                "url":"https://d25vj8a4a1fyy.cloudfront.net/topicNews/tab2?topic=1110&is_mobile=1&model=iphone&targetId=1110&gaName=%E9%97%9C%E7%A8%85%E6%88%B0listing",
+                "width":94,
+                "minVersion":"6.0.0",
+                "maxVersion":"9.9.9",
+                "pageId":1110
+            },
+            {
+                "name":"黎智英案",
+                "class":"CustomEventWebview",
+                "url":"https://d25vj8a4a1fyy.cloudfront.net/topicNews/tab2?topic=1052&is_mobile=1&model=iphone&targetId=1052&gaName=%E9%BB%8E%E6%99%BA%E8%8B%B1%E6%A1%88listing",
+                "width":112,
+                "minVersion":"5.9.9",
+                "maxVersion":"5.9.9",
+                "pageId":1052
+            },
+             {"name":"兩岸國際", "class":"InternationalNewsViewList", "width":97, "minVersion":"5.0.0", "maxVersion":"9.9.9", "pageId":5},
+             {"name":"財經", "class":"FinanceNewsListView", "width":74, "minVersion":"5.0.0", "maxVersion":"9.9.9", "pageId":6},
+             {
+                "name":"啟德體育園",
+                "class":"CustomEventWebview",
+                "url":"https://news.now.com/revamp2014/components/kaiTakContent.jsp?topic=1109&is_mobile=1&model=iphone&targetId=1109&gaName=%E5%95%9F%E5%BE%B7%E9%AB%94%E8%82%B2%E5%9C%92listing",
+                "width":130,
+                "minVersion":"6.0.0",
+                "maxVersion":"9.9.9",
+                "pageId":1109
+            },
+            {
+                "name":"熊貓追蹤",
+                "class":"CustomEventWebview",
+                "url":"https://news.now.com/revamp2014/components/pandaContent.jsp?topic=1104&is_mobile=1&model=iphone&targetId=1104&gaName=%E7%86%8A%E8%B2%93%E8%BF%BD%E8%B9%A4listing",
+                "width":112,
+                "minVersion":"6.0.0",
+                "maxVersion":"9.9.9",
+                "pageId":1104
+            },
+             {"name":"娛樂", "class":"EntertainmentNewsListView", "width":74, "minVersion":"5.0.0", "maxVersion":"9.9.9", "pageId":17},
+             {"name":"生活科技", "class":"LifeTechNewsListView", "width":97, "minVersion":"5.0.0", "maxVersion":"9.9.9", "pageId":18},
+             {"name":"事件追蹤", "class":"FeatureTopicNewsListView", "width":97, "minVersion":"5.0.0", "maxVersion":"9.9.9", "pageId":10},
+             {"name":"評論節目", "class":"NowBrandNewsListView", "width":100, "minVersion":"6.2.4", "maxVersion":"9.9.9", "pageId":12},
+            {"name":"新聞專題", "class":"NowBrandTopicNewsListView", "width":100, "minVersion":"6.2.4", "maxVersion":"9.9.9", "pageId":11},
+             {"name":"體育", "class":"SportNewsListView", "width":74, "minVersion":"5.0.0", "maxVersion":"9.9.9", "pageId":7},
+             {
+                  "name":"English News",
+                  "class":"CustomEventWebview",
+                  "url":"https://d25vj8a4a1fyy.cloudfront.net/topicNews/tab2?topic=1078&is_mobile=1&model=iphone&targetId=1078&gaName=EnglishNewslisting",
+                  "width":130,
+                  "minVersion":"5.0.0",
+                  "maxVersion":"9.9.9",
+                  "pageId":1078
+             },
+             {
+                "name":"WATCH",
+                "class":"CustomEventWebview",
+                "url":"https://news.now.com/watch/app-tab/?d=ios&theme=dark",
+                "width":110,
+                "minVersion":"6.0.0",
+                "maxVersion":"9.9.9",
+                "pageId":1999
+            }
+             ],
+    "provider_list":{
+        "12" : {"title":"Now 新聞台"},
+        "14" : {"title":"Now 財經台"},
+        "15" : {"title":"now.com 體育"},
+        "16" : {"title":"now.com"},
+        "17" :  {"title":"Now TV"},
+        "18" :  {"title":"MOOV"},
+        "19" :  {"title":"MEDIA.now.com"},
+        "20" :  {"title":"Qooah.com"},
+        "21" :  {"title":"東方新地"},
+        "22" :  {"title":"新Monday"},
+        "23" :  {"title":"新假期周刊"},
+        "24" :  {"title":"sundaymore"},
+        "25" :  {"title":"Sunday Kiss"},
+        "26" :  {"title":"winandmac.com"},
+        "27" :  {"title":"MenClub.hk"},
+        "28" :  {"title":"長空自遊系列"},
+        "29" :  {"title":"DBC數碼電台"},
+        "30" :  {"title":"dbc 1台旗艦台"},
+        "31" :  {"title":"dbc2台 me2"},
+        "32" :  {"title":"dbc 6台音樂台"},
+        "33" :  {"title":"CHEER.hk"},
+        "34" :  {"title":"DiGi Online"},
+        "35" :  {"title":"MOBILE"},
+        "36" :  {"title":"明報"},
+        "37" :  {"title":"PCM 電腦廣場"},
+        "38" :  {"title":"Viu"},
+        "39" :  {"title":"視電台"},
+        "40" :  {"title":"韓星網"},
+    	"41" :  {"title":"明周"},
+    	"42" :  {"title":"K1 韓娛新聞"},
+    	"43" :  {"title":"photonews"},
+        "44" :  {"title":"男士通信"},
+	"45" :  {"title":"Midway"},
+	"46" :  {"title":"Travelpop"},
+    	"47" :  {"title":"YBEX"},
+	"48" :  {"title":"A and M Diary"},
+	"49" :  {"title":"韓流網"},
+	"50" :  {"title":"Ming’s"},
+	"51" :  {"title":"旅癮我最大"},
+	"52" :  {"title":"裝修佬"},
+	"53" :  {"title":"大兄台"},
+	"54" :  {"title":"Paul Gor"},
+	"55" :  {"title":"Bithia Lam"},
+    "56" :  {"title":"KKday"},
+    "57" :  {"title":"Viu1 娛樂新聞"},
+    "58" :  {"title":"Viu Beauty"},
+    "59" :  {"title":"Viu Food"},
+    "61" :  {"title":"阿棟有事求教"}
+     },    
+    "pressBackCountForCrazyAD_Pre" : "2",
+    "pressBackCountForCrazyAD" : "5",
+    "scrollCatCount_Pre" : "5",
+    "scrollCatCount" : "5",
+    "popCrazyADSecond" : "300",
+    "reloadCurrentNewsListFromBGSecond" : "300",
+    "popCrazyADResumeFromBGSecond" : "300",
+    "playVideoADCounter":{
+    	"playVideoADIn" : "1,3,5,7,9",
+    	"playVideoADLarger" : ""
+    },
+    "livePlayer":{
+        "videoAdRepeatTimeSecond" : "900",
+        "livePlayerRadioManuallyExtract" : "n"
+    },
+    "nowWatch":{
+            "catList" : [{"title": "最新", "catId": "n"},
+                        {"title": "港聞", "catId": "c119"},
+                        {"title": "兩岸國際", "catId": "c120"},
+                        {"title": "財經", "catId": "c121"},
+                        {"title": "英超精華", "catId": "t671"},
+                        {"title": "西甲精華", "catId": "t679"},
+                        {"title": "世味天下", "catId": "t353"},
+                        {"title": "杏林在線", "catId": "t534"},
+                        {"title": "經緯線", "catId": "t647"},
+                        {"title": "時事全方位", "catId": "t566"},
+                        {"title": "大鳴大放", "catId": "t378"},
+                        {"title": "國際兩岸評論", "catId": "t351"}
+                    ],
+            "videoAdAllowList" : "2",
+            "pageBGFGreloadSec" : "300"
+        },
+    "video":{
+        "vodQuality" : "abr"
+    },
+    "comN":"Now.com"
+
+}
+
